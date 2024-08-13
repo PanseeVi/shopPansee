@@ -14,14 +14,17 @@ a {
   text-decoration: none;
   color: orange;
 }
-
+li {
+  text-decoration: none;
+}
 .header {
-  width: 100%;
+  width: 100vw;
 }
 
 .main--content {
-  width: 1400px;
-  max-width: 100%-60px;
+  padding-top: 10px;
+  width: 90%;
+  max-width: 100%-100px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -29,9 +32,9 @@ a {
 .header--body {
   display: flex;
 }
-
 .head--logo {
-  width: 80px;
+  width: 70px;
+  height: 70px;
 }
 
 .nav {
@@ -43,8 +46,28 @@ a {
 }
 .menu--list {
   padding: 26px;
+  position: relative;
 }
 
+.menu--list a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 1px;
+  background-color: orangered;
+  height: 3px;
+  border-radius: 999px;
+  width: 0;
+}
+
+.menu--list:hover a::after {
+  width: 100%;
+  transition: 0.4s;
+}
+
+.menu--list:hover a {
+  color: black;
+}
 .btn {
   padding: 26px;
 }
@@ -118,4 +141,52 @@ a {
   width: 30px;
   background-color: orange;
   transition: 0.5s;
+}
+
+.main--body {
+  display: flex;
+  margin-top: 10px;
+}
+
+.aside {
+  width: 15%;
+  background-color: beige;
+}
+
+.iframe {
+  width: 80%;
+  height: 1430px;
+  margin: auto;
+  /* border-left: 1px solid black; */
+}
+/* footer css */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer--content p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.social--inks a,
+.footer--links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 14px;
+}
+
+.social--links a:hover,
+.footer--links a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
 }

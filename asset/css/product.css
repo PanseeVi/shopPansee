@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.7rem;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+.container {
+}
+.main--content {
+  padding: 10px;
+  width: 90%;
+  max-width: 100%-100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.select--bar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sort--selection {
+  display: flex;
+  text-align: center;
+}
+.tag {
+  padding: 16px;
+}
+.sort--selection select {
+  height: 50px;
+}
+
+.display--selection {
+  display: flex;
+}
+.display--selection i {
+  height: 50px;
+  width: 50px;
+  padding: 16px;
+}
+
+.shower--items {
+  text-align: center;
+  width: 25%;
+  float: left;
+  padding: 10px;
+}
+.items--img img {
+  width: 200px;
+}
+.items--content {
+  padding: 10px;
+}
+.items--name {
+  font-size: 1.8rem;
+  color: black;
+  padding: 10px;
+}
+.items--name:hover {
+  color: orange;
+}
+
+.item--price {
+  color: green;
+}
+
+.add__cart--btn {
+  margin: 10px;
+  padding: 20px;
+  border-radius: 5px;
+  color: white;
+  background-color: black;
+}
+
+.add__cart--btn:hover {
+  color: black;
+  background-color: orange;
+}
